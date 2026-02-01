@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CFTQ Cloud - 客户端下载</title>
+	<link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="/scripts/index.css">
+	<link rel="stylesheet" href="/scripts/download.css">
+</head>
+
+<body>
+	<!-- 背景特效层 -->
+	<div class="background-container">
+		<div class="glass-glow-background"></div>
+		<div class="particle-stars"></div>
+		<div class="data-grid-background"></div>
+		<div class="light-streams"></div>
+		<div class="geometric-background" id="geometricBackground"></div>
+	</div>
+
+	<!-- 导航栏 - 与index.html统一 -->
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<img src="/favicon.ico" alt="Logo" style="height:32px;width:32px;border-radius:6px;">
+				<h1>CFTQ Cloud</h1>
+				<p>快速 · 稳定 · 安全的云安全解决方案</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="/index.html"><i class="fas fa-home"></i> 首页</a></li>
+					<li><a href="/download.html" class="active"><i class="fas fa-download"></i> 下载</a></li>
+					<!-- 资源中心下拉菜单 -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">
+							<i class="fas fa-folder-open"></i> 资源中心 <i class="fas fa-chevron-down dropdown-arrow"></i>
+						</a>
+						<ul class="dropdown-menu">
+							<!-- 1. 文档按钮 (在上) -->
+							<li><a href="#"><i class="fas fa-book"></i> 文档</a></li>
+							<!-- 2. Q&A帮助中心按钮 (在下) -->
+							<li><a href="#"><i class="fas fa-question-circle"></i> Q&A</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<!-- 下载页面的英雄区域 -->
+		<section class="download-hero">
+			<div class="hero-content">
+				<h1>下载 CFTQ Cloud 安全产品</h1>
+				<p>选择适合您需求的解决方案，保护您的系统免受威胁。</p>
+			</div>
+		</section>
+
+		<!-- 下载产品区域 -->
+		<section class="download-section">
+			<h2 class="section-title">我们的产品</h2>
+			<div class="features-container">
+				<!-- 离线CLI扫描工具 -->
+				<div class="feature-card fade-in" data-delay="0.1">
+					<h3><i class="fas fa-terminal"></i> 离线CLI扫描工具</h3>
+					<div class="download-info">
+						<span>版本: <span class="version">v2.3.1</span></span>
+						<span>大小: 15.2 MB</span>
+					</div>
+					<p>轻量级命令行工具，适合技术人员和自动化脚本集成，提供高效的本地文件扫描能力。</p>
+					<div class="download-buttons">
+						<a href="https://fengchedownload.lanzouu.com/b00od823da" class="download-btn"><i
+								class="fab fa-windows"></i> Windows 版下载（密码:6v32）</a>
+					</div>
+				</div>
+
+				<!-- GUI扫描器 -->
+				<div class="feature-card fade-in" data-delay="0.2">
+					<h3><i class="fas fa-desktop"></i> GUI扫描器</h3>
+					<div class="download-info">
+						<span>版本: <span class="version">v3.0.2</span></span>
+						<span>大小: 42.7 MB</span>
+					</div>
+					<p>直观的图形界面扫描工具，适合普通用户使用，提供详细的扫描报告和可视化分析。</p>
+					<div class="download-buttons">
+						<a href="https://fengchedownload.lanzouu.com/b00od823li" class="download-btn"><i
+								class="fab fa-windows"></i> Windows 版下载（密码:4mgl）</a>
+					</div>
+				</div>
+
+				<!-- 在线扫描服务 -->
+				<div class="feature-card fade-in" data-delay="0.3">
+					<h3><i class="fas fa-cloud"></i> 在线扫描服务</h3>
+					<div class="download-info">
+						<span>版本: <span class="version">Web版</span></span>
+						<span>无需安装</span>
+					</div>
+					<p>直接在浏览器中使用我们的云扫描服务，无需下载任何软件，随时随地检查文件安全性。</p>
+					<div class="download-buttons">
+						<a href="/os.html" class="download-btn"><i class="fas fa-external-link-alt"></i> 立即使用</a>
+						<a href="#" class="download-btn secondary-btn"><i class="fas fa-book"></i> 使用指南</a>
+					</div>
+				</div>
+
+				<!-- 杀毒软件 -->
+				<div class="feature-card fade-in" data-delay="0.4">
+					<h3><i class="fas fa-shield-alt"></i> 完整杀毒软件（C Safe）</h3>
+					<div class="download-info">
+						<span>版本: <span class="version">v4.1.0</span></span>
+						<span>大小: 85.3 MB</span>
+					</div>
+					<p>全面的安全解决方案，提供实时保护、防火墙和高级威胁检测功能，全方位保护您的设备。</p>
+					<div class="download-buttons">
+						<a href="https://csafe.ternaryop.top/" class="download-btn"><i class="fab fa-windows"></i>
+							跳转到产品主页</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 要求区域 -->
+		<section class="download-section">
+			<h2 class="section-title">推荐系统要求</h2>
+			<div class="system-requirements">
+				<div class="system-card">
+					<h3><i class="fab fa-windows"></i> Windows</h3>
+					<ul>
+						<li><i class="fas fa-check-circle"></i> Windows 7 及以上</li>
+						<li><i class="fas fa-check-circle"></i> 2GB 内存</li>
+						<li><i class="fas fa-check-circle"></i> 240MB 可用磁盘空间</li>
+						<li><i class="fas fa-check-circle"></i> 互联网连接 (用于更新)</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-try-now">
+			<div class="cta-container">
+				<div class="cta-content">
+					<div class="cta-icon">
+						<i class="fas fa-rocket"></i>
+					</div>
+					<h2>准备好体验 CFTQ Cloud 了吗？</h2>
+					<p>立即下载或使用我们的产品/服务，开始保护您的计算机免受威胁！</p>
+				</div>
+				<a href="/download.html" class="cta-button-large">
+					<i class="fas fa-download"></i>
+					<span>立即体验</span>
+					<div class="button-glow"></div>
+				</a>
+			</div>
+		</div>
+		<div class="footer-container">
+			<div class="footer-links">
+				<h3>快速链接</h3>
+				<ul>
+					<li><a href="/">首页</a></li>
+					<li><a href="/download.html">下载</a></li>
+					<li><a href="/os.html">在线扫描</a></li>
+					<li><a href="https://docs.nanoera.top/docs/cftq-cloud_apikey">获取API</a></li>
+				</ul>
+			</div>
+			<div class="footer-links">
+				<h3>帮助与支持</h3>
+				<ul>
+					<li><a href="/support.html">获取支持</a></li>
+					<li><a href="/support/faq.html">问题中心</a></li>
+				</ul>
+			</div>
+			<div class="footer-links">
+				<h3>关于</h3>
+				<ul>
+					<li><a href="https://www.nanoera.top/">NanoEra Studio | 纳米时代</a></li>
+					<li><a href="https://docs.nanoera.top/docs/cftq-cloud-protocol">隐私政策及服务协议</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>&copy; 2025 CFTQ Cloud. 保留所有权利。<br>NanoEra Studio</p>
+		</div>
+	</footer>
+
+	<!-- 返回顶部按钮 -->
+	<div class="back-to-top">
+		<i class="fas fa-arrow-up"></i>
+	</div>
+
+	<script src="/scripts/index.js"></script>
+	<script src="/scripts/download.js"></script>
+</body>
+
+</html>
