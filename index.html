@@ -2,15 +2,15 @@
 <html lang="zh-CN">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ARE渲染引擎-</title>
-	<link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="stylesheet" href="/scripts/index.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ARE 曙光引擎 - Aurora Rendering Engine</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+	<link rel="stylesheet" href="/scripts/index.css" />
 </head>
 
 <body>
+
 	<!-- 背景特效层 -->
 	<div class="background-container">
 		<div class="glass-glow-background"></div>
@@ -20,159 +20,174 @@
 		<div class="geometric-background" id="geometricBackground"></div>
 	</div>
 
-	<!-- 导航栏 -->
+	<!-- 导航栏 - 老样式液态玻璃 -->
 	<header>
 		<div class="header-container">
 			<div class="logo">
-				<!-- <img src="/res/logo/logo.png" alt="Logo"> -->
 				<h1>Aurora Rendering Engine</h1>
 				<p>一款由NanoEra自主研发的高性能实时物理渲染引擎</p>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="/index.html" class="active"><i class="fas fa-home"></i> 首页</a></li>
-					<li><a href="#"><i class="fas fa-download"></i> 下载</a></li>
-					<!-- 资源中心下拉菜单 -->
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle">
-							<i class="fas fa-folder-open"></i> 资源中心 <i class="fas fa-chevron-down dropdown-arrow"></i>
-						</a>
-						<ul class="dropdown-menu">
-							<!-- 1. 文档按钮 (在上) -->
-							<li><a href="#"><i class="fas fa-book"></i> 文档</a></li>
-							<!-- 2. Q&A帮助中心按钮 (在下) -->
-							<li><a href="#"><i class="fas fa-question-circle"></i> Q&A</a></li>
-						</ul>
-					</li>
-
+					<li><a href="/" class="active"><i class="fas fa-home"></i> 首页</a></li>
+					<li><a href="/download/"><i class="fas fa-download"></i> 下载</a></li>
+					<li><a href="/faq/"><i class="fas fa-book"></i> 文档</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<main>
-		<section class="hero">
-			<!-- <div class="hero-image"> -->
-			<!-- 	<img src="/res/logo/logo.png" alt="Aurora Rendering Engine" class="cta-image"> -->
-			<!-- </div> -->
-			<div class="hero-content">
-				<h2>ARE 曙光引擎</h2>
-				<p>曦色未名，待君执笔。</p>
-				<a href="https://github.com/NanoEra/aurora-rendering-engine/" class="cta-button">
-					<i class="fas fa-code"></i>
-					<span>前往GitHub仓库</span>
-				</a>
-			</div>
-		</section>
-
-		<section class="introduction">
-			<h2 class="section-title">我们的引擎特点</h2>
-			<div class="features-container">
-				<div class="feature-card fade-in" data-delay="0.1">
-					<h2><i class="fas fa-database"></i> 先进的启发数据库内循环系统</h2>
-					<p>CFTQ Cloud搭载了最新一代数据库内循环系统，能够自动分析您上传的文件并实时提取文件特征上传至数据库，保障了CFTQ对于新型病毒的查杀能力。</p>
-					<div class="buttons-container">
-						<a href="https://ternaryop.top/" class="tech-link"><i class="fas fa-external-link-alt"></i>
-							开发者：Ternary_Operator</a>
-					</div>
-				</div>
-
-				<div class="feature-card fade-in" data-delay="0.2">
-					<h2><i class="fas fa-brain"></i> 自研的新一代启发式反病毒引擎</h2>
-					<p>CFTQ Cloud搭载了多个自研启发式引擎，结合由<a href="https://www.nanoera.top"
-							class="纳米时代NanoEra">纳米时代NanoEra</a>团队自研的采用关联数据挖掘算法与高维关联度分级筛选算法的训练引擎，在保障查杀率的同时实现了高速的查杀速度。</p>
-					<div class="buttons-container">
-						<a href="/resources/engine.html" class="tech-link"><i class="fas fa-book"></i> 详细了解</a>
-					</div>
-				</div>
-
-				<div class="feature-card fade-in" data-delay="0.3">
-					<h2><i class="fas fa-shield-alt"></i> 对恶意文件全方面的检出能力</h2>
-					<p>截至目前，CFTQ Cloud数据库总计收录了上万病毒样本，启发规则总量5000w+条，确保全面覆盖不同病毒；同时，CFTQ启发数据库确保按月提供更新，保障查杀能力有效。</p>
-					<div class="buttons-container">
-						<a href="https://docs.nanoera.top/docs/cftq-cloud_apikey" class="tech-link"><i
-								class="fas fa-key"></i> 立即申请CFTQ Cloud API</a>
-					</div>
-				</div>
-
-				<div class="feature-card fade-in" data-delay="0.4">
-					<h2><i class="fas fa-microchip"></i> 自研、自制、自控的核心框架</h2>
-					<p>CFTQ Cloud依靠自研核心技术，自制安全产品，自控产品质量。用自己的知识研发技术，用自己的技术制作产品，用自己的产品服务用户。</p>
-					<div class="buttons-container">
-						<a href="/resources/about-us.html" class="tech-link"><i class="fas fa-book-open"></i>了解故事</a>
-					</div>
-				</div>
-
-				<div class="feature-card fade-in" data-delay="0.5">
-					<h2><i class="fas fa-share-alt"></i> 更加开放、广袤的拓展能力</h2>
-					<p>CFTQ Cloud已加入共建云安全情报网络计划，与各家安全厂商共享威胁情报。</p>
-					<img src="build_together.png" alt="共建云安全情报网络计划"
-						style="width:100%;border-radius:12px;margin-top:1rem;box-shadow:0 4px 15px rgba(0,0,0,0.3);">
-				</div>
-
-				<div class="feature-card fade-in" data-delay="0.6">
-					<h2><i class="fas fa-gift"></i> 面向个人用户免费</h2>
-					<p>CFTQ Cloud旗下产品面向个人用户免费；即使是面向开发者，也有免费的API接口方案。</p>
-					<div class="buttons-container">
-						<a href="https://docs.nanoera.top/docs/cftq-cloud_apikey" class="tech-link"><i
-								class="fas fa-key"></i> 立即申请CFTQ Cloud API</a>
-					</div>
-					<div class="buttons-container">
-						<a href="/resources/download.html" class="tech-link"><i class="fas fa-download"></i>
-							立即下载体验产品</a>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer>
-		<div class="footer-try-now">
-			<div class="cta-container">
-				<div class="cta-content">
-					<div class="cta-icon">
-						<i class="fas fa-rocket"></i>
-					</div>
-					<h2>准备好体验 CFTQ Cloud 了吗？</h2>
-					<p>立即下载或使用我们的产品/服务，开始保护您的计算机免受威胁！</p>
-				</div>
-				<a href="/download/" class="cta-button-large">
-					<i class="fas fa-download"></i>
-					<span>立即体验</span>
-					<div class="button-glow"></div>
-				</a>
+	<!-- HERO -->
+	<section class="hero">
+		<div class="hero-text">
+			<h1>Aurora<br /><span>Rendering Engine</span></h1>
+			<p>一款由 NanoEra 自主研发的高性能实时物理渲染引擎。曦色未名，待君执笔。我们致力于为创作者提供卓越的渲染体验。</p>
+			<div class="hero-btns">
+				<button class="btn-primary" onclick="window.location.href='/download/'">立即下载</button>
+				<button class="btn-dark" onclick="window.open('https://github.com/NanoEra/aurora-rendering-engine/')">前往GitHub仓库</button>
 			</div>
 		</div>
+
+		<!-- Scene / Image -->
+		<div class="scene-wrapper">
+			<img src="/res/titleimage.png" alt="Aurora Rendering Engine" class="hero-image"
+				onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+			<canvas id="scene" style="display:none;"></canvas>
+		</div>
+
+		<!-- Scroll Down Arrow -->
+		<div class="scroll-down" onclick="scrollToFeatures()">
+			<i class="fas fa-chevron-down"></i>
+		</div>
+	</section>
+
+	<!-- 引擎特点 - Feature Cards -->
+	<section class="section" id="features">
+		<div class="section-header">
+			<span class="section-title">我们的引擎特点(p.s. 这里别看还没写完)</span>
+		</div>
+		<div class="features-container">
+			<div class="feature-card fade-in" data-delay="0.1">
+				<h3><i class="fas fa-layer-group"></i> 先进的渲染管线</h3>
+				<p>ARE 搭载了全新一代渲染管线，支持多种渲染模式，能够自动优化渲染效率，保障渲染质量与速度的平衡。</p>
+			</div>
+
+			<div class="feature-card fade-in" data-delay="0.2">
+				<h3><i class="fas fa-wand-magic-sparkles"></i> 自研新一代着色器系统</h3>
+				<p>ARE 搭载多个自研着色器引擎，结合由纳米时代团队自研的先进算法，在保障渲染效果的同时实现了高速的渲染速度。</p>
+			</div>
+
+			<div class="feature-card fade-in" data-delay="0.3">
+				<h3><i class="fas fa-shield-alt"></i> 全面的兼容性</h3>
+				<p>截至目前，ARE 已支持 Windows、Linux 两大平台，确保全面覆盖不同用户需求；同时，引擎保持月度更新，保障功能持续有效。</p>
+			</div>
+
+			<div class="feature-card fade-in" data-delay="0.4">
+				<h3><i class="fas fa-microchip"></i> 自研、自制、自控的核心框架</h3>
+				<p>ARE 依靠自研核心技术，自制安全产品，自控产品质量。用自己的知识研发技术，用自己的技术制作产品，用自己的产品服务用户。</p>
+			</div>
+
+			<div class="feature-card fade-in" data-delay="0.5">
+				<h3><i class="fas fa-share-alt"></i> 更加开放、广袤的拓展能力</h3>
+				<p>ARE 已加入开源社区计划，与各家开发者共享技术成果。</p>
+			</div>
+
+			<div class="feature-card fade-in" data-delay="0.6">
+				<h3><i class="fas fa-gift"></i> 面向个人用户免费</h3>
+				<p>ARE 旗下产品面向个人用户免费；即使是面向开发者，也有免费的开源方案。</p>
+				<div class="buttons-container">
+					<a href="https://github.com/NanoEra/aurora-rendering-engine/" class="tech-link"><i
+							class="fas fa-code"></i> 查看源码</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 长文预览区域 -->
+	<section class="longform">
+		<aside class="toc" aria-label="目录">
+			<nav>
+				<ol id="tocList"></ol>
+			</nav>
+		</aside>
+		<article class="content" id="article">
+			<section>
+				<h2>(p.s. 这里也没写完)</h2>
+				<p>ARE（Aurora Rendering Engine）专注于高性能实时物理渲染，面向创作者与开发者提供即开即用的体验。我们在视觉质量与执行效率之间寻求平衡，强调稳定与可扩展。</p>
+				<p>在长文布局下，我们将核心理念、架构设计、性能优化思路以及落地示例进行系统化呈现，帮助你在更少的跳转中完整了解项目脉络。</p>
+			</section>
+			<section>
+				<h2>核心能力</h2>
+				<p>引擎支持现代硬件与浏览器环境，包含可调度的渲染管线、面向对象的材质系统，以及对低性能设备的自适应策略。我们坚持渐进式增强，确保在不同设备上都能获得合理体验。</p>
+			</section>
+			<section>
+				<h2>路线与规划</h2>
+				<p>我们将以更清晰的模块化与文档化推进，逐步完善开发工具链、示例库与资源下载体验，并欢迎社区共建。</p>
+			</section>
+		</article>
+	</section>
+
+	<!-- 渲染图集 -->
+	<section class="gallery" aria-label="渲染图集">
+		<h2 class="section-title">渲染图集</h2>
+		<div class="thumbs" id="galleryGrid">
+			<figure>
+				<img loading="lazy" src="/res/rendering/bd141799d6d81bbf91e0bf34a837110c.png" data-full="/res/rendering/bd141799d6d81bbf91e0bf34a837110c.png" alt="康奈尔盒子-镜面背板">
+				<figcaption>康奈尔盒子-镜面背板</figcaption>
+			</figure>
+			<figure>
+				<img loading="lazy" src="/res/rendering/b2c55ed32c0999c15ff77339058694c7.png" data-full="/res/rendering/b2c55ed32c0999c15ff77339058694c7.png" alt="康奈尔盒子-砖质纹理">
+				<figcaption>康奈尔盒子-砖质纹理</figcaption>
+			</figure>
+			<figure>
+				<img loading="lazy" src="/res/rendering/894b753d6dd3cf10223a3866cb10e61d.png" data-full="/res/rendering/894b753d6dd3cf10223a3866cb10e61d.png" alt="康奈尔盒子-玻璃材质">
+				<figcaption>康奈尔盒子-玻璃材质</figcaption>
+			</figure>
+			<figure>
+				<img loading="lazy" src="/res/rendering/c339e6cb07b96176fe6a9473fe8b5cbc.png" data-full="/res/rendering/c339e6cb07b96176fe6a9473fe8b5cbc.png" alt="康奈尔盒子-法线贴图">
+				<figcaption>康奈尔盒子-法线贴图</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<!-- 图片查看器 -->
+	<div class="lightbox" id="lightbox" aria-hidden="true">
+		<button class="lb-close" aria-label="关闭">×</button>
+		<button class="lb-prev" aria-label="上一张">‹</button>
+		<figure class="lb-figure">
+			<img id="lbImage" alt="">
+			<figcaption id="lbCaption"></figcaption>
+		</figure>
+		<button class="lb-next" aria-label="下一张">›</button>
+	</div>
+
+	<!-- 页脚 - 老样式液态玻璃 -->
+	<footer>
 		<div class="footer-container">
 			<div class="footer-links">
 				<h3>快速链接</h3>
 				<ul>
-					<li><a href="/index.html">首页</a></li>
-					<li><a href="/download/">下载</a></li>
-					<li><a href="https://docs.nanoera.top/">文档</a></li>
-					<li><a href="/faq/">FAQ</a></li>
+					<li><a href="/">首页</a></li>
+					<li><a href="/downloads/">下载</a></li>
+					<li><a href="/faq/">文档</a></li>
 				</ul>
 			</div>
-
 			<div class="footer-links">
 				<h3>帮助与支持</h3>
 				<ul>
-					<li><a href="https://docs.nanoera.top/">技术文档</a></li>
 					<li><a href="/faq/">常见问题</a></li>
 				</ul>
 			</div>
-
 			<div class="footer-links">
 				<h3>关于</h3>
 				<ul>
 					<li><a href="https://www.nanoera.top/">NanoEra | 纳米时代</a></li>
-					<li><a href="https://docs.nanoera.top/docs/cftq-cloud-protocol">隐私政策及服务协议</a></li>
+					<li><a href="https://github.com/NanoEra/aurora-rendering-engine/">GitHub</a></li>
 				</ul>
 			</div>
 		</div>
-
 		<div class="copyright">
-			<p>&copy; 2025-2026 Aurora Rendering Engine. 保留所有权利。<br>NanoEra Studio</p>
+			<p>&copy; 2025-2026 Aurora Rendering Engine. 保留所有权利。<br><a href="https://www.nanoera.top/">NanoEra Studio</a></p>
 		</div>
 	</footer>
 

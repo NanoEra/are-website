@@ -2,16 +2,15 @@
 <html lang="zh-CN">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>问题中心 - CFTQ Cloud</title>
-	<link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<link rel="stylesheet" href="/scripts/index.css">
-	<link rel="stylesheet" href="/scripts/faq.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>文档 & FAQ - Aurora Rendering Engine</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+	<link rel="stylesheet" href="/scripts/index.css" />
 </head>
 
 <body>
+
 	<!-- 背景特效层 -->
 	<div class="background-container">
 		<div class="glass-glow-background"></div>
@@ -21,266 +20,120 @@
 		<div class="geometric-background" id="geometricBackground"></div>
 	</div>
 
-	<!-- 导航栏 - 与index.html统一 -->
+	<!-- 导航栏 -->
 	<header>
 		<div class="header-container">
 			<div class="logo">
-				<!-- <img src="/res/logo/logo.png" alt="Logo"> -->
 				<h1>Aurora Rendering Engine</h1>
 				<p>一款由NanoEra自主研发的高性能实时物理渲染引擎</p>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="/index.html"><i class="fas fa-home"></i> 首页</a></li>
-					<li><a href="/download.html"><i class="fas fa-download"></i> 下载</a></li>
-					<!-- 资源中心下拉菜单 -->
-					<li class="dropdown active">
-						<a href="#" class="dropdown-toggle">
-							<i class="fas fa-folder-open"></i> 资源中心 <i class="fas fa-chevron-down dropdown-arrow"></i>
-						</a>
-						<ul class="dropdown-menu">
-							<!-- 1. 文档按钮 (在上) -->
-							<li><a href="#"><i class="fas fa-book"></i> 文档</a></li>
-							<!-- 2. Q&A帮助中心按钮 (在下) -->
-							<li><a href="/support/faq.html" class="active"><i class="fas fa-question-circle"></i>
-									Q&A</a></li>
-						</ul>
-					</li>
-
+					<li><a href="/"><i class="fas fa-home"></i> 首页</a></li>
+					<li><a href="/download/"><i class="fas fa-download"></i> 下载</a></li>
+					<li><a href="/faq/" class="active"><i class="fas fa-book"></i> 文档</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
-	<main>
-		<!-- FAQ英雄区域 -->
-		<section class="faq-hero">
-			<div class="hero-content">
-				<div class="faq-title">
-					<h2 class="faq-title-word">常见问题</h2>
-					<p class="faq-title-word-p">这里汇集了常见的问题及解答，帮助您更好地使用 CFTQ Cloud 的产品及服务。</p>
+	<!-- 页面标题 -->
+	<div class="page-header">
+		<div class="page-header-content">
+			<h1>文档中心</h1>
+			<p>常见问题与使用指南</p>
+		</div>
+	</div>
+
+	<!-- FAQ Main -->
+	<main class="faq-main">
+		<!-- Search -->
+		<div class="faq-search">
+			<i class="fa-solid fa-search"></i>
+			<input type="text" id="faqSearch" placeholder="搜索问题...">
+		</div>
+
+		<!-- FAQ Categories -->
+		<div class="section">
+			<div class="features-container">
+
+				<div class="feature-card fade-in" data-delay="0.1">
+					<h3><i class="fa-solid fa-circle-question"></i> Aurora Rendering Engine 是什么？</h3>
+					<p>Aurora Rendering Engine (ARE) 是一款由 NanoEra 团队自主研发的高性能实时物理渲染引擎。曦色未名，待君执笔——我们致力于为创作者和开发者提供卓越的渲染体验。
+					</p>
 				</div>
-			</div>
-		</section>
 
-		<!-- FAQ搜索区域 -->
-		<section class="download-section">
-			<div class="search-container">
-				<input type="text" placeholder="搜索问题或关键词...">
-				<i class="fas fa-search"></i>
-			</div>
-
-			<!-- 无结果提示 -->
-			<div class="no-results">
-				<i class="fas fa-search"></i>
-				<h3>未找到相关结果</h3>
-				<p>请尝试其他关键词或浏览下面的问题分类</p>
-			</div>
-
-			<!-- FAQ分类区域 -->
-			<div class="faq-category">
-				<h3><i class="fas fa-cloud"></i> 一般问题</h3>
-				<div class="features-container">
-					<div class="feature-card fade-in" data-delay="0.1">
-						<div class="faq-item">
-							<div class="faq-question"><span>CFTQ Cloud 是什么？</span><i class="fas fa-chevron-down"></i>
-							</div>
-							<div class="faq-answer">
-								<p>CFTQ Cloud 是一款基于云的安全解决方案，提供文件扫描、威胁检测和安全分析服务。我们采用先进的启发式引擎和机器学习技术，为用户提供快速、准确的安全防护。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="feature-card fade-in" data-delay="0.2">
-						<div class="faq-item">
-							<div class="faq-question"><span>CFTQ Cloud 是免费的吗？</span><i class="fas fa-chevron-down"></i>
-							</div>
-							<div class="faq-answer">
-								<p>是的，CFTQ Cloud 面向个人用户完全免费。我们致力于为所有用户提供高质量的安全服务，即使是面向开发者，也有免费的API接口方案。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="feature-card fade-in" data-delay="0.3">
-						<div class="faq-item">
-							<div class="faq-question"><span>CFTQ Cloud 与其他杀毒软件有什么区别？</span><i
-									class="fas fa-chevron-down"></i></div>
-							<div class="faq-answer">
-								<p>CFTQ Cloud
-									采用自研的新一代启发式反病毒引擎，结合由纳米时代团队自研的关联数据挖掘算法与高维关联度分级筛选算法的训练引擎，在保障查杀率的同时实现了高速的查杀速度。同时，我们的数据库内循环系统能够自动分析上传的文件并实时提取特征，保障了对新型病毒的查杀能力。
-								</p>
-							</div>
-						</div>
-					</div>
+				<div class="feature-card fade-in" data-delay="0.2">
+					<h3><i class="fa-solid fa-gift"></i> ARE 是免费的吗？</h3>
+					<p>是的，ARE 面向个人用户完全免费。我们致力于为所有用户提供高质量的渲染技术，即使是面向开发者，也有免费的开源方案。</p>
 				</div>
-			</div>
 
-			<div class="faq-category">
-				<h3><i class="fas fa-shield-alt"></i> 安全与隐私</h3>
-				<div class="features-container">
-					<div class="feature-card fade-in" data-delay="0.1">
-						<div class="faq-item">
-							<div class="faq-question"><span>上传的文件会如何处理？</span><i class="fas fa-chevron-down"></i></div>
-							<div class="faq-answer">
-								<p>上传的文件仅用于安全分析，扫描后立即从服务器删除，仅保留必要的元数据以改进检测能力。我们严格遵循隐私保护原则，确保您的文件安全。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="feature-card fade-in" data-delay="0.2">
-						<div class="faq-item">
-							<div class="faq-question"><span>我的数据安全吗？</span><i class="fas fa-chevron-down"></i></div>
-							<div class="faq-answer">
-								<p>是的，我们严格遵循"三不"原则（不存储、不泄露、不滥用），服务器与网页均为自有基础设施，确保数据安全。所有数据传输都经过加密处理。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="feature-card fade-in" data-delay="0.3">
-						<div class="faq-item">
-							<div class="faq-question"><span>CFTQ Cloud 如何保护用户隐私？</span><i
-									class="fas fa-chevron-down"></i></div>
-							<div class="faq-answer">
-								<p>我们采用端到端加密技术保护数据传输，严格的数据访问控制，定期安全审计，以及透明的隐私政策。您可以查看我们的<a
-										href="https://docs.nanoera.top/docs/cftq-cloud-protocol">隐私政策及服务协议</a>了解更多详细信息。
-								</p>
-							</div>
-						</div>
-					</div>
+				<div class="feature-card fade-in" data-delay="0.3">
+					<h3><i class="fa-solid fa-desktop"></i> 支持哪些平台？</h3>
+					<p>目前支持 Windows 10+/Linux (Ubuntu 20.04+)。移动端支持正在开发中。源代码完全开源，可在 GitHub 获取。</p>
 				</div>
-			</div>
 
-			<div class="faq-category">
-				<h3><i class="fas fa-desktop"></i> 客户端使用</h3>
-				<div class="features-container">
-					<div class="feature-card fade-in" data-delay="0.1">
-						<div class="faq-item">
-							<div class="faq-question"><span>如何下载和安装客户端？</span><i class="fas fa-chevron-down"></i></div>
-							<div class="faq-answer">
-								<p>前往<a href="/download.html">下载页面</a>获取 Windows
-									版安装包，按提示安装即可。我们提供离线CLI扫描工具、GUI扫描器和完整杀毒软件等多种选择。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="feature-card fade-in" data-delay="0.2">
-						<div class="faq-item">
-							<div class="faq-question"><span>客户端支持哪些操作系统？</span><i class="fas fa-chevron-down"></i></div>
-							<div class="faq-answer">
-								<p>目前客户端仅支持 Windows 7 及以上版本。对于其他操作系统（如 macOS、Linux），您可以通过浏览器使用我们的<a
-										href="/os.html">在线扫描服务</a>，无需安装任何软件。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="feature-card fade-in" data-delay="0.3">
-						<div class="faq-item">
-							<div class="faq-question"><span>系统要求是什么？</span><i class="fas fa-chevron-down"></i></div>
-							<div class="faq-answer">
-								<p>推荐系统要求：Windows 7 及以上，2GB 内存，240MB 可用磁盘空间，以及互联网连接用于更新病毒库。具体系统要求请参考<a
-										href="/download.html">下载页面</a>。</p>
-							</div>
-						</div>
-					</div>
+				<div class="feature-card fade-in" data-delay="0.4">
+					<h3><i class="fa-solid fa-code"></i> 如何获取源代码？</h3>
+					<p>访问我们的 <a href="https://github.com/NanoEra/aurora-rendering-engine/" target="_blank"
+							style="color: var(--primary-light);">GitHub 仓库</a>，可以克隆项目或下载发布版本。遵循 MIT 许可证。</p>
 				</div>
-			</div>
 
-			<div class="faq-category">
-				<h3><i class="fas fa-code"></i> API 与开发者</h3>
-				<div class="features-container">
-					<div class="feature-card fade-in" data-delay="0.1">
-						<div class="faq-item">
-							<div class="faq-question"><span>如何获取 API 密钥？</span><i class="fas fa-chevron-down"></i></div>
-							<div class="faq-answer">
-								<p>您可以访问<a href="https://docs.nanoera.top/docs/cftq-cloud_apikey">API 文档页面</a>申请 API
-									密钥。我们为个人开发者和商业用户提供不同的方案。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="feature-card fade-in" data-delay="0.2">
-						<div class="faq-item">
-							<div class="faq-question"><span>API 的调用限制是多少？</span><i class="fas fa-chevron-down"></i>
-							</div>
-							<div class="faq-answer">
-								<p>免费方案：每天 100 次调用，每月 3000 次调用。如需更高限制，请查看我们的付费方案或联系客服。详细的 API 限制和定价信息请参考<a
-										href="https://docs.nanoera.top/docs/cftq-cloud_apikey">API 文档</a>。</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="feature-card fade-in" data-delay="0.3">
-						<div class="faq-item">
-							<div class="faq-question"><span>支持哪些编程语言调用 API？</span><i class="fas fa-chevron-down"></i>
-							</div>
-							<div class="faq-answer">
-								<p>我们的 API 支持任何能够发送 HTTP 请求的编程语言。我们提供 Python、JavaScript、Java 等语言的示例代码。具体请参考<a
-										href="https://docs.nanoera.top/docs/cftq-cloud_apikey">API 文档</a>中的示例部分。</p>
-							</div>
-						</div>
-					</div>
+				<div class="feature-card fade-in" data-delay="0.5">
+					<h3><i class="fa-solid fa-users"></i> 如何参与开发？</h3>
+					<p>我们欢迎社区贡献！请阅读 GitHub 上的 CONTRIBUTING 指南，提交 Pull Request 或报告 Issue。</p>
 				</div>
-			</div>
-		</section>
-	</main>
 
-	<footer>
-		<div class="footer-try-now">
-			<div class="cta-container">
-				<div class="cta-content">
-					<div class="cta-icon">
-						<i class="fas fa-question-circle"></i>
-					</div>
-					<h2>没有找到您的问题？</h2>
-					<p>联系我们的技术支持团队，获取更多帮助和个性化解答。</p>
+				<div class="feature-card fade-in" data-delay="0.6">
+					<h3><i class="fa-solid fa-book"></i> 有哪些技术文档？</h3>
+					<p>完整的 API 文档、示例代码和架构说明可在 GitHub 仓库的 docs/ 目录中找到。我们也在不断完善中文文档。</p>
 				</div>
-				<a href="/support.html" class="cta-button-large">
-					<i class="fas fa-headset"></i>
-					<span>联系支持</span>
-					<div class="button-glow"></div>
-				</a>
+
+				<div class="feature-card fade-in" data-delay="0.7">
+					<h3><i class="fa-solid fa-headset"></i> 遇到问题如何获取帮助？</h3>
+					<p>可以通过 GitHub Issues 提交问题，或加入我们的社区讨论。对于商业支持需求，请通过官网联系方式咨询。</p>
+				</div>
+
+				<div class="feature-card fade-in" data-delay="0.8">
+					<h3><i class="fa-solid fa-envelope"></i> 如何联系团队？</h3>
+					<p>发送邮件至团队邮箱，或在 GitHub 上提交 Issue。我们会尽快回复。</p>
+				</div>
+
 			</div>
 		</div>
+	</main>
+
+	<!-- 页脚 -->
+	<footer>
 		<div class="footer-container">
 			<div class="footer-links">
 				<h3>快速链接</h3>
 				<ul>
-					<li><a href="/index.html">首页</a></li>
-					<li><a href="/download.html">下载</a></li>
-					<li><a href="/os.html">在线扫描</a></li>
-					<li><a href="https://docs.nanoera.top/docs/cftq-cloud_apikey">获取API</a></li>
+					<li><a href="/">首页</a></li>
+					<li><a href="/download/">下载</a></li>
+					<li><a href="/faq/">文档</a></li>
 				</ul>
 			</div>
-
 			<div class="footer-links">
 				<h3>帮助与支持</h3>
 				<ul>
-					<li><a href="/support.html">获取支持</a></li>
-					<li><a href="/support/faq.html" class="active">问题中心</a></li>
+					<li><a href="/faq/">常见问题</a></li>
 				</ul>
 			</div>
-
 			<div class="footer-links">
 				<h3>关于</h3>
 				<ul>
-					<li><a href="https://www.nanoera.top/">NanoEra Studio | 纳米时代</a></li>
-					<li><a href="https://docs.nanoera.top/docs/cftq-cloud-protocol">隐私政策及服务协议</a></li>
+					<li><a href="https://www.nanoera.top/">NanoEra | 纳米时代</a></li>
+					<li><a href="https://github.com/NanoEra/aurora-rendering-engine/">GitHub</a></li>
 				</ul>
 			</div>
 		</div>
-
 		<div class="copyright">
-			<p>&copy; 2025 CFTQ Cloud. 保留所有权利。<br>NanoEra Studio</p>
+			<p>&copy; 2025-2026 Aurora Rendering Engine. 保留所有权利。<br><a href="https://www.nanoera.top/">NanoEra Studio</a></p>
 		</div>
 	</footer>
 
-	<!-- 返回顶部按钮 -->
-	<div class="back-to-top">
-		<i class="fas fa-arrow-up"></i>
-	</div>
-
 	<script src="/scripts/index.js"></script>
-	<script src="/scripts/faq.js"></script>
 </body>
 
 </html>
